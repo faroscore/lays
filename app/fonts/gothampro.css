@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 300;
+  font-style: normal;
+  src: url("gothampro/gothampro-light-webfont.woff") format('woff'),
+       url("gothampro/gothampro-light-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 300;
+  font-style: italic;
+  src: url("gothampro/gothampro-lightitalic-webfont.woff") format('woff'),
+       url("gothampro/gothampro-lightitalic-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("gothampro/gothampro-webfont.woff") format('woff'),
+       url("gothampro/gothampro-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 400;
+  font-style: italic;
+  src: url("gothampro/gothampro-italic-webfont.woff") format('woff'),
+       url("gothampro/gothampro-italic-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 500;
+  font-style: normal;
+  src: url("gothampro/gothampro-medium-webfont.woff") format('woff'),
+       url("gothampro/gothampro-medium-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 500;
+  font-style: italic;
+  src: url("gothampro/gothampro-mediumitalic-webfont.woff") format('woff'),
+       url("gothampro/gothampro-mediumitalic-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 700;
+  font-style: normal;
+  src: url("gothampro/gothampro-bold-webfont.woff") format('woff'),
+       url("gothampro/gothampro-bold-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 700;
+  font-style: italic;
+  src: url("gothampro/gothampro-bolditalic-webfont.woff") format('woff'),
+       url("gothampro/gothampro-bolditalic-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 900;
+  font-style: normal;
+  src: url("gothampro/gothampro-black-webfont.woff") format('woff'),
+       url("gothampro/gothampro-black-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 900;
+  font-style: italic;
+  src: url("gothampro/gothampro-blackitalic-webfont.woff") format('woff'),
+       url("gothampro/gothampro-blackitalic-webfont.ttf") format('truetype');
+}

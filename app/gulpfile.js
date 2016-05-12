@@ -20,8 +20,7 @@ gulp.task('image', function() {
             svgoPlugins: [{ removeViewBox: false }],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('dist/img'))
-        .pipe(notify("images completed!"));
+        .pipe(gulp.dest('dist/img'));
 });
 
 //clean 
@@ -36,15 +35,13 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(autoprefixer("last 15 versions"))
         .pipe(cssnano())
-        .pipe(gulp.dest('dist/css/'))
-        .pipe(notify("sass completed!"));
+        .pipe(gulp.dest('dist/css/'));
 });
 
 //js
 gulp.task('js', function() {
     return gulp.src('app/js/*.js')
-        .pipe(gulp.dest('dist/js/'))
-        .pipe(notify("js completed!"));
+        .pipe(gulp.dest('dist/js/'));
 });
 
 //всякие ништяки для js
@@ -68,7 +65,8 @@ gulp.task('final', ['sass', 'image', 'js', 'vendor-js', 'vendor-css'], function(
 });
 
 gulp.task('default', function() {
-    livereload.listen({ basePath: '' });
+    livereload.listen();
+
     gulp.watch("app/*.html", ['final']).on('change', livereload.changed);
     gulp.watch("app/sass/*.sass", ['final']).on('change', livereload.changed);
     gulp.watch("app/js/*.js", ['final']).on('change', livereload.changed);

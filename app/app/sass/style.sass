@@ -1,27 +1,19 @@
 body
 	margin: 0
 	padding: 0
-	height: 100vh
-	background: #e2e2e2
+	font-family: "GothamPro"
 
-.title
-	color: #9C8484
-	font-family: "Helvetica"
-	text-transform: uppercase
-	font-weight: 100
-	display: block
-	text-align: center
+.content
+	flex: 1
+
+.wrapper
+	width: 1560px
+	box-sizing: border-box
+	margin: auto
 	position: relative
-	top: 50%
-	transform: translateY(-50%)
-	&::after, &::before
-		content: ""
-		width: 90px
-		height: 1px
-		background: #656363
-		position: relative
-		bottom: 0
-		display: block
-		margin: 20px auto
-	&::before
-		top: 0
+
+@import 'background'
+@import 'columns'
+@import 'header'
+@import 'nav'
+

@@ -1,0 +1,58 @@
+$important-color: #f73934;
+$margin-left: 45px
+$content-justify: space-between;
+
+.gallery
+	display: flex
+
+.gallery--download
+	background: url(../img/gallery-download-background.jpg)
+	padding: 35px 45px 80px
+	background-position: -115px
+	background-repeat: no-repeat
+	background-size: cover
+
+.gallery--download-title
+	font-size: 44px
+	font-weight: bold
+	display: block
+	width: 280px
+	margin-left: $margin-left
+	line-height: 60px
+
+.gallery--download-title__important
+	display: block
+	color: $important-color
+	background: white
+	font-weight: normal
+	text-align: center
+
+.gallery--download-submit
+	width: 250px
+	display: block
+	box-sizing: border-box
+	color: white
+	border: 3px solid white
+	text-transform: uppercase
+	background: rgba(0,0,0,0.1)
+	padding: 25px 60px
+	text-align: center
+	font-size: 24px
+	margin: 40px $margin-left 0
+
+	// теперь фотошки
+
+.gallery--photos
+	padding: 30px
+
+.gallery--photos-row
+	display: flex
+	justify-content: $content-justify
+	&:not(:last-child)
+		margin-bottom: 10px
+
+.gallery--photos-item
+	display: block
+	img
+		width: 100%
+

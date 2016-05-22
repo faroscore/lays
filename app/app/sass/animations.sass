@@ -1,0 +1,46 @@
+@keyframes headermove
+  from 
+    transform : translateX(500px)
+  to 
+    transform : translateX(0)
+
+@keyframes gallerymove
+  from 
+    transform : translateX(-500px)
+  to 
+    transform : translateX(0)
+
+@keyframes scalepictures
+  from
+    transform: scale(1)
+  to
+    transform: scale(1.13)
+
+header
+  animation: headermove 1s 1
+
+.gallery
+  animation: gallerymove 1s 1
+
+div[class*=header--promo-item-logo].faded
+  transform: scale(0)
+
+.header--promo-item-title.faded
+  opacity: 0
+
+.left-moved
+  transform: translateX(-150px)
+  opacity: 0.5
+
+.right-moved
+  transform: translateX(150px)
+  opacity: 0.5
+
+//TODO надо сделать картинки в блоках с воздушным шаром и челами , а не бэкграунды
+.summer--photo
+  img 
+    animation: scalepictures 20s infinite alternate ease-in-out
+
+.about--baloon
+  img 
+    animation: scalepictures 10s infinite alternate ease-in-out

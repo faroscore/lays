@@ -2,6 +2,7 @@ footer
   background: #3c3c3c
   justify-content: space-between
   height: 100px
+  height: px-to-rem(100)
 
 .footer--info
   align-items: center
@@ -9,22 +10,32 @@ footer
 .footer--info-logo
   transform: scale(0.722)
   margin-left: 30px
+  margin-left: px-to-rem(30)
 
 .footer--info-title
   color: #b4b4b4
   font-size: 12px
+  font-size: px-to-rem(12)
   font-family: Arial
   margin-left: 20px
+  margin-left: px-to-rem(20)
   font-weight: 600
   &::after
     content: "© 2015 Lay's Russia. Все права защищены"
 
 .footer--socials
   width: 400px
+  width: px-to-rem(400)
   
-div[class*="footer--socials-item"]
+a[class*="footer--socials-item"]
   background-position: 50%
   background-repeat: no-repeat
+  transition: all 0.4s
+  display: block
+  background-size: 35px
+  background-size: px-to-rem(35)
+  &:hover
+    filter: brightness(1.2)
 
 .footer--socials-item__facebook
   background-color: #3269a2

@@ -1,32 +1,44 @@
 .summer--photo
-  background: url(../img/summer-photo-background.jpg) no-repeat
-  background-size: cover
+  overflow: hidden
+  transition: all 0.4s
+  img
+    display: block
+    width: 100%
 
 .summer--map
   position: relative
   background: url(../img/summer-map-background.jpg) no-repeat
   background-size: cover
+  transition: all 0.4s
+  &:before
+    content: ""
+    display: block
+    width: 120px
+    width: px-to-rem(120)
+    height: 120px
+    height: px-to-rem(120)
+    background: url(../img/summer-map-triangle.png)
+    position: absolute
+    transform: rotate(134deg)
+    left: -19px
+    left: px-to-rem(-19)
+    top: 50%
+    background-size: cover
 
-.summer--map-logo
-  display: block
-  margin: 75px auto 15px
 
 .summer--map-title
   display: block
   font-size: 67px
+  font-size: px-to-rem(67)
   font-weight: bold
   text-align: center
   color: #301f20
+  margin-top: 470px
+  margin-top: px-to-rem(470)
 
 .summer--map-submit
-  padding: 22px 55px
+  padding: 22px 0
+  padding: px-to-rem(22px) 0
   margin: 35px auto 60px
+  margin: px-to-rem(35) auto px-to-rem(60)
 
-.summer--map-triangle
-  width: 60px
-  height: 60px
-  background: url(../img/summer-map-background.png) 100px
-  position: absolute
-  transform: rotate(45deg)
-  left: -30px
-  top: 345px

@@ -8,54 +8,72 @@ header
 	background: url(../img/header-background.jpg)
 	background-position: right bottom
 	padding: 75px 80px
+	padding: px-to-rem(75) px-to-rem(80)
 	background-repeat: no-repeat
 	background-size: cover
 
 .header--title
 	color: $important-color
 	font-size: 56px
-	width: 300px
+	font-size: px-to-rem(56)
+	width: 295px
+	width: px-to-rem(295)
 	display: block
 	font-weight: 100
 	position: relative
 	line-height: 56px
+	line-height: px-to-rem(56)
 
 .header--title__important
 	font-size: 88px
+	font-size: px-to-rem(88)
 	font-weight: bold
 	&:first-child
 		font-size: 98px
+		font-size: px-to-rem(98)
 		font-weight: 500
 
 .header--promo
 	display: flex
 	width: 525px
+	width: px-to-rem(525)
 	justify-content: $content-justify
 
 .header--promo-item
- display: inline-block
- width: 150px
-
+	display: inline-block
+	width: 150px
+	width: px-to-rem(150px)
+	
 .header--promo-item-title
 	color: #45370a
 	font-size: 18px
+	font-size: px-to-rem(18)
 	display: block
 	text-align: center
 	margin: 20px auto 80px
+	margin: px-to-rem(20) auto px-to-rem(80)
 	font-weight: 500
+	transition: all 0.4s
+	transform: scale(1)
 
 .header--promo-item-title__important
 	color: $important-color
 
 div[class*="header--promo-item-logo"]
 	width: 125px
+	width: px-to-rem(125)
 	height: 125px
+	height: px-to-rem(125)
 	display: block
 	background-color: white
 	border-radius: 50%
 	background-position: center center
 	background-repeat: no-repeat
 	margin: auto
+	transition: all 0.5s
+	transform: scale(1)
+	background-size: 65px
+	background-size: px-to-rem(65)
 
 .header--promo-item-logo__photo
 	background-image: url(../img/header-photo.png)

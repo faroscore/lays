@@ -1,3 +1,9 @@
+$max-width : 1920px
+$min-width : 320px
+
+@function px-to-rem($px)
+  @return ($px/16) + rem
+
 body
 	margin: 0
 	padding: 0
@@ -6,26 +12,42 @@ body
 .content
 	flex: 1
 
+.content
+  background-color: #FFDA2F
+  padding-left: 150px
+  padding-left: px-to-rem(150)
+
 .wrapper
-	width: 1560px
+	width: 100%
 	box-sizing: border-box
 	margin: auto
 	position: relative
 
+.wrapper
+  max-width: $max-width
+  min-width: $min-width
+  overflow: hidden
+
 /* общий стиль для кнопок */
 span[class*="submit"]
   width: 225px
+  width: px-to-rem(225)
   display: block
   box-sizing: border-box
   color: white
   border: 3px solid white
+  border: px-to-rem(3) solid white
   text-transform: uppercase
   text-align: center
   font-size: 24px
+  font-size: px-to-rem(24)
   cursor: pointer
   line-height: 1
+  transition: all 0.4s
+  &:hover
+    background: rgba(0,0,0,0.2)
 
-
+@import 'media'
 @import 'background'
 @import 'columns'
 @import 'header'
@@ -36,3 +58,4 @@ span[class*="submit"]
 @import 'footer'
 @import '1400px'
 @import 'mobile'
+@import 'animations' 

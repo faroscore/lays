@@ -1,25 +1,41 @@
-$mobile-padding: 20px
-
 @media (max-width: 640px)
   .mobile-col__1
     width: 100%
+    opacity: 1 !important
+    transform: translateX(0) !important
 
   .wrapper
-    width: 640px
+    width: 100%
+    min-width: 320px
+    min-width: px-to-rem(320)
     flex-direction: column
+
+  .content
+    padding-left: 0
+    padding-top: 150px
+    padding-top: px-to-rem(150)
+    background: white
+    min-width: 320px
 
   .nav
     display: flex
     justify-content: space-between
     align-items: center
     width: 100% !important
+    min-width: 320px
+    min-width: px-to-rem(320)
     padding-top: 0
     background: #f6f6f6
     padding: 30px 50px 30px 40px
+    padding: px-to-rem(30) px-to-rem(50) px-to-rem(30) px-to-rem(40)
+    height: 150px
+    height: px-to-rem(150)
 
   .nav--logo
     margin: auto 0
-    height: 93.5px
+    padding: 0
+    width: 110px
+    width: px-to-rem(110)
 
   .nav--item
     display: none
@@ -27,41 +43,57 @@ $mobile-padding: 20px
   .nav--tagline
     margin: 0
     font-size: 40px
+    font-size: px-to-rem(40)
 
   .nav--burger
     display: block
-
-  div[class*="triangle"]
-    display: none
+    width: 61px
+    width: px-to-rem(61)
+    cursor: pointer
 
   .columns-row
     flex-wrap: wrap
 
   header
     position: relative
-    padding: 55px $mobile-padding 825px
+    padding: 60px 20px 870px
+    padding: px-to-rem(60) px-to-rem(20) px-to-rem(870)
     background: url(../img/header-background-mobile.png)
-    background-position-x: 62.3%
-    background-position-y: 100%
+    background-position: 62.3% 100%
+    animation: none !important
+    background-size: 976px
+    background-size: px-to-rem(976)
 
   .header--promo
     box-sizing: border-box
     width: 600px
+    width: px-to-rem(600)
     position: absolute
     top: 290px
+    top: px-to-rem(290)
 
   .header--promo-item
-    width: 150px
+    width: 170px
+    width: px-to-rem(170)
 
   .header--title
     margin: auto
     display: block
     text-align: center
 
+  .header--promo-item-title
+    font-size: 26px
+    font-size: px-to-rem(26)
+
   div[class*="header--promo-item-logo"]
     height: 130px
+    height: px-to-rem(130)
     width: 130px
+    width: px-to-rem(130)
 
+  .gallery
+    animation: none !important
+    
   .gallery--photos
     position: relative
     .gallery--photos-row
@@ -71,33 +103,46 @@ $mobile-padding: 20px
       content: ""
       display: block
       width: 60px
+      width: px-to-rem(60)
       height: 60px
+      height: px-to-rem(60)
       background: white
       position: absolute
       right: 50%
       transform: translateX(50%) rotate(45deg)
       top: -30px
+      top: px-to-rem(-30)
       z-index: 1
 
   .about--baloon
     position: relative
+    z-index: 2
     &:before
       content: ""
       display: block
       width: 60px
+      width: px-to-rem(60)
       height: 60px
-      background: linear-gradient(to right top,#1F66BF,#1D65BF,#325caf)
+      height: px-to-rem(60)
+      background: linear-gradient(to right top,#2e7ad0,#2873c9,#325caf)
       position: absolute
       right: 50%
       transform: translateX(50%) rotate(-45deg)
       top: -30px
-      z-index: 1
+      top: px-to-rem(-30)
+      z-index: 0
+
+  .about--get-prize:after,.summer--map:before
+    display: none
 
   .gallery--download
     position: relative
     background: url(../img/gallery-download-background-mobile.jpg)
     background-position: 27% bottom
+    background-repeat: no-repeat
+    background-size: cover
     margin-top: 10px
+    margin-top: px-to-rem(10)
 
   .gallery--download-socials
     display: none
@@ -105,41 +150,86 @@ $mobile-padding: 20px
   .gallery--download-socials__mobile
     display: block
     margin-top: 20px
+    margin-top: px-to-rem(20)
     margin-bottom: 15px
+    margin-bottom: px-to-rem(15)
+    width: 267px
+    width: px-to-rem(267)
 
   .gallery--download-submit
     position: absolute
     margin: 0
     bottom: 114px
+    bottom: px-to-rem(114)
     right: 60px
+    right: px-to-rem(60)
 
   .gallery--download-title__important
     margin-bottom: 40px
+    margin-bottom: px-to-rem(40)
     width: 265px
+    width: px-to-rem(265)
     text-align: center
     margin-left: -20px
+    margin-left: px-to-rem(-20)
 
   .about--get-prize-submit
     margin: 0 auto 90px
+    margin: 0 auto px-to-rem(90)
 
   .about--get-prize-title
-    margin: 0
-    display: block
     box-sizing: border-box
-    width: 100%
     font-size: 57px
-    padding: 85px 105px 0 70px
+    font-size: px-to-rem(57)
+    top: 0
+    display: block
+    width: 100%
+    padding: 90px 80px 10px 65px
+    padding: px-to-rem(90) px-to-rem(80) px-to-rem(10) px-to-rem(65)
 
   .about--get-prize-salt-pack
-    left: inherit
-    right: 40px
-    top: 185px
+    right: 65px
+    right: px-to-rem(65)
+    top: 82px
+    top: px-to-rem(82)
+    position: absolute
+    height: 250px
+    height: px-to-rem(250)
 
   .about--get-prize-description
-    margin-right: 299px
     font-size: 24px
+    font-size: px-to-rem(24)
     line-height: 32px
+    line-height: px-to-rem(32)
     margin-bottom: 70px
+    margin-bottom: px-to-rem(70)
+    padding-right: 318px
+    padding-right: px-to-rem(318)
+
+  .summer--map-title
+    margin-top: 400px
+    margin-top: px-to-rem(400)
+
+  .summer--map
+    position: relative
+    z-index: 2
+    margin-top: 10px
+    &:after
+      content: ""
+      display: block
+      width: 60px
+      width: px-to-rem(60)
+      height: 60px
+      height: px-to-rem(60)
+      background: url(../img/summer-photo-triangle.png)
+      position: absolute
+      right: 50%
+      -webkit-transform: rotate(-45deg)
+      transform: translateX(50%) rotate(-135deg)
+      bottom: -33px
+      bottom: px-to-rem(-33)
+      z-index: 0
+      background-size: cover
 
   .footer--info
     flex: 1
@@ -157,3 +247,7 @@ $mobile-padding: 20px
       font-weight: 100
       color: #7a7a7a
       font-size: 16px
+      font-size: px-to-rem(16)
+
+  a[class*="footer--socials-item"]
+    background-size: 2rem

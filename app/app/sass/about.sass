@@ -1,50 +1,77 @@
+@function px-to-rem($px)
+  @return ($px/16) + rem
+
 .about--get-prize
   background: url(../img/about-get-prize.jpg)
   background-position: center
   background-repeat: no-repeat
   background-size: cover
   position: relative
+  transition: all 0.4s
+  &:after
+    content: ""
+    display: block
+    background: url(../img/about-triangle.png)
+    width: 120px
+    height: 120px
+    width: px-to-rem(120)
+    height: px-to-rem(120)
+    position: absolute;
+    transform: rotate(-136deg)
+    right: -24px
+    right: px-to-rem(-24)
+    top: 205px
+    top: px-to-rem(205)
+    z-index: 1
+    background-size: cover
 
 .about--get-prize-submit
-  background: #f63612
-  padding: 20px 35px
+  background: rgba(0,0,0,0.1)
+  padding: 20px 0
+  padding: px-to-rem(20) 0
   margin: 0 0 90px 80px
+  margin: 0 0 px-to-rem(90) px-to-rem(80)
 
 .about--get-prize-title
-  display: block
   color: white
   font-weight: bold
   font-size: 60px
-  width: 250px
-  margin: 180px 100px 88px 330px
+  font-size: px-to-rem(60)
+  width: 300px
+  width: px-to-rem(300)
+  display: inline-block
+  position: relative
+  top: -45px
+  top: px-to-rem(-45)
 
 .about--get-prize-description
   display: block
-  margin: 40px 110px 40px 80px
+  margin: 40px 0 40px
+  margin: px-to-rem(40) 0 px-to-rem(40)
+  padding: 0 110px 0 80px
+  padding: 0 px-to-rem(110) 0 px-to-rem(80)
   color: white
   font-size: 20px
+  font-size: px-to-rem(20)
   font-weight: 400
 
-.about--get-prize-triangle
-  background: linear-gradient(to right top, #f11800,#ed0c00)
-  width: 60px
-  height: 60px
-  position: absolute
-  transform: rotate(45deg)
-  right: -30px
-  top: 205px
-
 .about--get-prize-salt-pack
-  position: absolute
-  left: 45px
-  top: 105px
+  margin-left: 45px
+  margin-left: px-to-rem(45)
+  margin-top: 105px
+  margin-top: px-to-rem(105)
+  height: 301px
+  height: px-to-rem(301)
 
 // Теперь шарик
 
 .about--baloon
-  background: url(../img/about-baloon-background.jpg) -275px -40px
+  transition: all 0.4s
 
-.about--baloon-image
-  display: block
-  margin: 125px auto
-
+.about--baloon-wrapper
+  width: 100%
+  overflow: hidden
+  transition: all 0.4s
+  img
+    display: block
+    width: 100%

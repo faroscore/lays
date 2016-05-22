@@ -17,111 +17,129 @@
             <nav class="nav">
                 <img src="img/nav-logo.png" alt="Logo" class="nav--logo">
                 <span class="nav--tagline">#летосLays</span>
-                <div class="nav--item">
+                <div class="nav--item" data-content="gallery">
                     <img src="img/nav-gallery.png" alt="Галерея" class="nav--item-icon">
                     <span class="nav--item-title">Галерея</span>
                 </div>
-                <div class="nav--item">
+                <div class="nav--item" data-content="about">
                     <img src="img/nav-about.png" alt="О проекте" class="nav--item-icon">
                     <span class="nav--item-title">О проекте</span>
                 </div>
-                <div class="nav--item">
+                <div class="nav--item" data-content="summer">
                     <img src="img/nav-summer.png" alt="Лето с Lay's" class="nav--item-icon">
                     <span class="nav--item-title">Лето с Lay's</span>
                 </div>
                 <img src="img/nav-burger.png" alt="Меню" class="nav--burger">
             </nav>
+            <div class="nav--mobile">
+                <div class="nav--mobile-item nav--mobile-item__left-moved">
+                    <img src="img/nav-gallery.png" alt="Галерея" class="nav--mobile-item-icon__gallery">
+                    <span class="nav--mobile-item-title">Галерея</span>
+                </div>
+                <div class="nav--mobile-item nav--mobile-item__right-moved">
+                    <img src="img/nav-about.png" alt="О проекте" class="nav--mobile-item-icon__about">
+                    <span class="nav--mobile-item-title">О проекте</span>
+                </div>
+                <div class="nav--mobile-item nav--mobile-item__left-moved">
+                    <img src="img/nav-summer.png" alt="Лето с Lay's" class="nav--mobile-item-icon__summer">
+                    <span class="nav--mobile-item-title">Лето с Lay's</span>
+                </div>
+
+                <span class="nav--mobile-close nav--mobile-item__right-moved">Свернуть меню</div>
+            </div>
             <div class="content">
                 <!-- Хэдер -->
-                <header>
-                    <div class="header--promo">
-                        <div class="header--promo-item">
-                            <div class="header--promo-item-logo__photo"></div>
-                            <span class="header--promo-item-title">
-                            Загружай фото с хэштегом <span class="header--promo-item-title__important">#летосLays</span>
-                            </span>
-                        </div>
-                        <div class="header--promo-item">
-                            <div class="header--promo-item-logo__like"></div>
-                            <span class="header--promo-item-title">Собирай
+                <div class='current-content' data-content-value='main'>
+                    <header>
+                        <div class="header--promo">
+                            <div class="header--promo-item">
+                                <div class="header--promo-item-logo__photo faded"></div>
+                                <span class="header--promo-item-title faded">
+                            Загружай фото <br>с хэштегом <span class="header--promo-item-title__important">#летосLays</span>
+                                </span>
+                            </div>
+                            <div class="header--promo-item">
+                                <div class="header--promo-item-logo__like faded"></div>
+                                <span class="header--promo-item-title faded">Собирай
                             <br>лайки</span>
+                            </div>
+                            <div class="header--promo-item">
+                                <div class="header--promo-item-logo__prize faded"></div>
+                                <span class="header--promo-item-title faded">Выигрывай <br> призы</span>
+                            </div>
                         </div>
-                        <div class="header--promo-item">
-                            <div class="header--promo-item-logo__prize"></div>
-                            <span class="header--promo-item-title">Выигрывай призы</span>
-                        </div>
-                    </div>
-                    <span class="header--title">
+                        <span class="header--title">
                       <span class="header--title__important">ЛЕТО</span> ВКУСНЕЕ С <span class="header--title__important">Lay's</span>
-                    </span>
-                </header>
-                <!-- Конец хэдера -->
-                <!-- Блок галереи -->
-                <div class="gallery columns-row">
-                    <div class="gallery--download column__1-2 mobile-col__1">
-                        <img src="img/gallery-download-socials.png" alt="" class="gallery--download-socials">
-                        <img src="img/gallery-download-socials-mobile.png" alt="" class="gallery--download-socials__mobile">
-                        <span class="gallery--download-title">Загружай фото с хэштегом
+                        </span>
+                    </header>
+                    <!-- Конец хэдера -->
+                    <!-- Блок галереи -->
+                    <div class="gallery columns-row">
+                        <div class="gallery--download column__1-2 mobile-col__1">
+                            <img src="img/gallery-download-socials.png" alt="" class="gallery--download-socials">
+                            <img src="img/gallery-download-socials-mobile.png" alt="" class="gallery--download-socials__mobile">
+                            <span class="gallery--download-title">Загружай фото с хэштегом
                         <span class="gallery--download-title__important">#летосLays</span></span>
-                        <span class="gallery--download-submit">галерея</span>
+                            <span class="gallery--download-submit">галерея</span>
+                        </div>
+                        <div class="gallery--photos column__1-2 mobile-col__1">
+                            <div class="gallery--photos-row">
+                                <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-1.jpg" alt="фото"></div>
+                                <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-2.jpg" alt="фото"></div>
+                                <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-3.jpg" alt="фото"></div>
+                            </div>
+                            <div class="gallery--photos-row">
+                                <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-4.jpg" alt="фото"></div>
+                                <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-5.jpg" alt="фото"></div>
+                                <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-6.jpg" alt="фото"></div>
+                            </div>
+                            <div class="gallery--photos-row">
+                                <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-7.jpg" alt="фото"></div>
+                                <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-8.jpg" alt="фото"></div>
+                                <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-9.jpg" alt="фото"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="gallery--photos column__1-2 mobile-col__1">
-                        <div class="gallery--photos-row">
-                            <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-1.jpg" alt="фото"></div>
-                            <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-2.jpg" alt="фото"></div>
-                            <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-3.jpg" alt="фото"></div>
+                    <!-- Конец блока галереи -->
+                    <!-- Блок о проекте -->
+                    <div class="about columns-row">
+                        <div class="about--get-prize left-moved column__1-2 mobile-col__1">
+                            <img src="img/get-prize-salt-pack.png" alt="Чипсы" class="about--get-prize-salt-pack">
+                            <span class="about--get-prize-title">Выиграй призы от Lay's</span>
+                            <span class="about--get-prize-description">Этим летом брэнд Lay’s задает тренд на яркое, вкусное лето и на позитивный желтый цвет.</span>
+                            <span class="about--get-prize-submit">О проекте</span>
                         </div>
-                        <div class="gallery--photos-row">
-                            <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-4.jpg" alt="фото"></div>
-                            <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-5.jpg" alt="фото"></div>
-                            <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-6.jpg" alt="фото"></div>
-                        </div>
-                        <div class="gallery--photos-row">
-                            <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-7.jpg" alt="фото"></div>
-                            <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-8.jpg" alt="фото"></div>
-                            <div class="gallery--photos-item column__1-3"><img src="img/gallery-photo-9.jpg" alt="фото"></div>
+                        <div class="about--baloon right-moved column__1-2 mobile-col__1">
+                            <div class="about--baloon-wrapper">
+                                <img src="img/about-baloon.jpg" alt="Воздушный шар">
+                            </div>
                         </div>
                     </div>
+                    <!-- Конец блока о проекте -->
+                    <!-- Начало блока о лете с Lay's -->
+                    <div class="summer columns-row">
+                        <div class="column__1-2 summer--photo  left-moved mobile-col__1">
+                            <img src="img/summer-photo.jpg" alt="">
+                        </div>
+                        <div class="column__1-2 summer--map right-moved mobile-col__1">
+                            <span class="summer--map-title">Лето с Lay's</span>
+                            <span class="summer--map-submit">Перейти</span>
+                        </div>
+                    </div>
+                    <!-- Конец блока о лете с Lay's -->
                 </div>
-                <!-- Конец блока галереи -->
-                <!-- Блок о проекте -->
-                <div class="about columns-row">
-                  <div class="about--get-prize column__1-2 mobile-col__1">
-                    <div class="about--get-prize-triangle"></div>
-                    <img src="img/get-prize-salt-pack.png" alt="Чипсы" class="about--get-prize-salt-pack">
-                    <span class="about--get-prize-title">Выиграй призы от Lay's</span>
-                    <span class="about--get-prize-description">Этим летом брэнд Lay’s задает тренд на яркое, вкусное лето и на позитивный желтый цвет.</span>
-                    <span class="about--get-prize-submit">О проекте</span>
-
-                  </div>
-                  <div class="about--baloon column__1-2 mobile-col__1">
-                    <img src="img/about-baloon.png" alt="Воздушный шар" class="about--baloon-image">
-                  </div>
-                </div>
-                <!-- Конец блока о проекте -->
-                <!-- Начало блока о лете с Lay's -->
-                <div class="summer columns-row">
-                  <div class="column__1-2 summer--photo mobile-col__1"></div>
-                  <div class="column__1-2 summer--map mobile-col__1">
-                    <div class="summer--map-triangle"></div>
-                    <img src="img/summer-map.png" alt="Карта" class="summer--map-logo">
-                    <span class="summer--map-title">Лето с Lay's</span>
-                    <span class="summer--map-submit">Перейти</span>
-                  </div>
-                </div>
-                <!-- Конец блока о лете с Lay's -->
                 <!-- ФУТЕР -->
                 <footer class="columns-row">
-                  <div class="footer--info columns-row">
-                    <img src="img/nav-logo.png" alt="Logo" class="footer--info-logo">
-                    <span class="footer--info-title"></span>
-                  </div>
-                  <div class="footer--socials columns-row">
-                    <div class="column__1-4 footer--socials-item__facebook"></div>
-                    <div class="column__1-4 footer--socials-item__vk"></div>
-                    <div class="column__1-4 footer--socials-item__noname"></div>
-                    <div class="column__1-4 footer--socials-item__youtube"></div>
-                  </div>
+                    <div class="footer--info columns-row">
+                        <img src="img/nav-logo.png" alt="Logo" class="footer--info-logo">
+                        <span class="footer--info-title"></span>
+                    </div>
+                    <div class="footer--socials columns-row">
+                        <a href="" class="column__1-4 footer--socials-item__facebook"></a>
+                        <a href="" class="column__1-4 footer--socials-item__vk"></a>
+                        <a href="" class="column__1-4 footer--socials-item__noname"></a>
+                        <a href="" class="column__1-4 footer--socials-item__youtube"></a>
+                    </div>
                 </footer>
                 <!-- КОНЕЦ ФУТЕРА -->
             </div>
@@ -129,7 +147,7 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="http://127.0.0.1:35729/livereload.js?ext=Chrome&extver=2.1.0"></script>
+    <script src="http://127.0.0.1:35729/livereload.js"></script>
 </body>
 
 </html>

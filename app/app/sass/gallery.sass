@@ -8,17 +8,22 @@ $content-justify: space-between;
 .gallery--download
 	background: url(../img/gallery-download-background.jpg)
 	padding: 35px 45px 80px
-	background-position: -115px
+	padding: px-to-rem(35) px-to-rem(45) px-to-rem(80)
+	background-position: right bottom
 	background-repeat: no-repeat
 	background-size: cover
 
 .gallery--download-title
 	font-size: 44px
+	font-size: px-to-rem(44)
+	line-height: 60px
+	line-height: px-to-rem(60)
 	font-weight: bold
 	display: block
 	width: 280px
+	width: px-to-rem(280)
 	margin-left: $margin-left
-	line-height: 60px
+	margin-left: px-to-rem(35)
 
 .gallery--download-title__important
 	display: block
@@ -29,29 +34,38 @@ $content-justify: space-between;
 
 .gallery--download-submit
 	background: rgba(0,0,0,0.1)
-	padding: 21px 60px
+	padding: 21px 0
+	padding: px-to-rem(21) 0
 	font-size: 24px
+	font-size: px-to-rem(24)
 	margin: 40px $margin-left 0
+	margin: px-to-rem(40) px-to-rem(35) 0
 
+.gallery--download-socials
+	height: 235px
+	height: px-to-rem(235)
+	
 .gallery--download-socials__mobile
 	display: none
 	// теперь фотошки
 
 .gallery--photos
 	padding: 30px
+	padding: px-to-rem(30)
 	display: flex
 	flex-direction: column
 	justify-content: center
+	background: white
 
 .gallery--photos-row
 	display: flex
 	justify-content: $content-justify
 	&:not(:last-child)
 		margin-bottom: 10px
+		margin-bottom: px-to-rem(10)
 
 .gallery--photos-item
 	display: block
 	img
 		width: 100%
 		display: block
-

@@ -5,11 +5,20 @@ $grey-text-color: #555555
 	box-sizing: border-box
 	background: #f6f6f6
 	width: 150px
+	width: px-to-rem(150)
 	padding-top: 17px
+	padding-top: px-to-rem(17)
+	position: fixed
+	height: 100%
+	z-index: 10
 
 .nav--logo
 	display: block
 	margin: auto
+	width: 100%
+	padding: 0 30px 
+	padding: 0 px-to-rem(30)
+	box-sizing: border-box
 
 .nav--tagline
 	color: $important-color
@@ -17,22 +26,140 @@ $grey-text-color: #555555
 	display: block
 	font-weight: bold
 	margin-top: 17px
+	margin-top: px-to-rem(17)
 	margin-bottom: 90px
+	margin-bottom: px-to-rem(90)
 
 .nav--item
-	margin-top: 40px
-	
+	// margin-top: 40px
+	padding: 20px 0
+	padding: px-to-rem(20) 0
+	cursor: pointer
+	box-sizing: border-box
+	&:hover
+		padding: 19px 0
+		padding: px-to-rem(19) 0
+		background: white
+		border-top: 1px solid #DDDDDD
+		border-top: px-to-rem(1) solid #DDDDDD
+		border-bottom: 1px solid #DDDDDD
+		border-bottom: px-to-rem(1) solid #DDDDDD
+
+.nav--item__selected
+	padding: 19px 0
+	padding: px-to-rem(19) 0
+	background: white
+	border-top: 1px solid #DDDDDD
+	border-top: px-to-rem(1) solid #DDDDDD
+	border-bottom: 1px solid #DDDDDD
+	border-bottom: px-to-rem(1) solid #DDDDDD
+
 .nav--item-icon
 	display: block
 	margin: auto
+	width: 100%
+	padding: 0 50px 
+	padding: 0 px-to-rem(50)
+	box-sizing: border-box
 
 .nav--item-title
 	display: block
 	text-align: center
 	color: $grey-text-color
 	font-size: 14px
+	font-size: px-to-rem(14)
 	margin-top: 10px
+	margin-top: px-to-rem(10)
 	font-weight: 500
 
 .nav--burger
 	display: none
+
+.nav--mobile
+	position: fixed
+	top: 150px
+	top: px-to-rem(150)
+	z-index: 0
+	width: 100%
+	min-width: 320px
+
+.nav--mobile__activated
+	z-index: 10
+
+.nav--mobile
+  font-size: 14px
+  font-size: px-to-rem(14)
+
+.nav--mobile-item
+	background: #F6F6F6
+	color: #555
+	box-sizing: border-box
+	height: 80px
+	height: px-to-rem(80)
+	position: relative
+	display: flex
+	border-top: 1px solid rgba(155,155,155,.18)
+	transition: all 0.4s
+	&:hover
+		background: white
+		border-top: 2px solid rgba(155,155,155,.50)
+
+
+img[class*='nav--mobile-item-icon']
+	position: absolute
+	top: 50%
+	left: 30px
+	left: px-to-rem(30)
+	transform: translateY(-50%)
+	cursor: pointer
+
+.nav--mobile-item-icon__gallery
+	width: 46px
+	width: px-to-rem(46)
+	height: 46px
+	height: px-to-rem(46)
+
+.nav--mobile-item-icon__about
+	width: 47px
+	width: px-to-rem(47)
+	height: 57px
+	height: px-to-rem(57)
+
+.nav--mobile-item-icon__summer
+	width: 49px
+	width: px-to-rem(49)
+	height: 47px
+	height: px-to-rem(47)
+
+.nav--mobile-item-title
+	display: block
+	margin: auto
+	text-align: center
+
+
+.nav--mobile-item:hover + .nav--mobile-item
+	border-top: 2px solid rgba(155,155,155,.50)
+
+.nav--mobile-item:hover + .nav--mobile-close
+	border-top: 2px solid rgba(155,155,155,.50)
+
+.nav--mobile-item__left-moved
+	transform: translateX(-150px)
+	opacity: 0
+
+.nav--mobile-item__right-moved
+	transform: translateX(150px)
+	opacity: 0
+
+.nav--mobile-close
+	box-sizing: border-box
+	text-transform: uppercase
+	display: flex
+	height: 60px
+	height: px-to-rem(60)
+	background: #F0EDED
+	align-items: center
+	cursor: pointer
+	border-top: 1px solid rgba(155,155,155,.18)
+	justify-content: center
+	transition: all 0.4s
